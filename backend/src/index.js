@@ -18,7 +18,7 @@ app.use(cors({origin : FRONTEND_URL,credentials:true}));
 app.use(clerkMiddleware());
 const PORT = process.env.PORT;
 
-console.log("Secret stuff : "+process.env.MONGODB_URI);
+// console.log("Secret stuff : "+process.env.MONGODB_URI);
 
 app.get("/health",(req,res)=>{
     res.status(200).json({ok:true});
